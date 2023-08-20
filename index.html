@@ -614,11 +614,51 @@
             <hr
               class="h-[1px] bg-[#11111180] w-9/12 xl:w-[294px] mx-auto mt-[24px]"
             />
-            <button
+            <!-- <button
               class="btn rounded-lg bg-[#E527B2] lg:w-[294px] h-[56px] text-white hover:text-[#E527B2] relative bottom-[-50px] normal-case text-[20px] font-semibold"
             >
               Make Purchase
+            </button> -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="btn rounded-lg bg-[#E527B2] lg:w-[294px] h-[56px] text-white hover:text-[#E527B2] relative bottom-[-50px] normal-case text-[20px] font-semibold"
+              onclick="my_modal_5.showModal()"
+            >
+              Make Purchase
             </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <div class="card bg-base-100 items-center">
+                  <figure class="">
+                    <img
+                      src="./images/congo.png"
+                      alt="Shoes"
+                      class="rounded-xl"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2
+                      class="card-title text-[#111] text-[32px] lg:text-[48px] font-bold font-work-sans"
+                    >
+                      Congratulations
+                    </h2>
+                    <p
+                      class="text-[#11111180] font-work-sans font-normal text-[20px] mt-4"
+                    >
+                      You purchased the product.
+                    </p>
+                    <div class="modal-action">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn rounded-lg bg-[#E527B2] text-white hover:text-[#E527B2] normal-case text-[20px] font-semibold"
+                      >
+                        Go Home
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
         <!-- cart container ends -->
