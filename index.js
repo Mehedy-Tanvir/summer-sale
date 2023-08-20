@@ -17,14 +17,14 @@ function cardClickHandler(data) {
   totalPrice += productPrice;
   setInnerValue("total-price", totalPrice.toFixed(2));
 
-  if (totalPrice >= 200) {
-    const applyBtn = document.getElementById("btn-apply");
-    applyBtn.removeAttribute("disabled");
-    setInnerValue("total", totalPrice.toFixed(2));
-  } else if (0 < totalPrice < 200) {
+  if (totalPrice > 0) {
     const purchaseBtn = document.getElementById("btn-purchase");
     purchaseBtn.removeAttribute("disabled");
     setInnerValue("total", totalPrice.toFixed(2));
+    if (totalPrice >= 200) {
+      const applyBtn = document.getElementById("btn-apply");
+      applyBtn.removeAttribute("disabled");
+    }
   }
   if (couponApplied) {
     let discountValue = totalPrice * 0.2;
