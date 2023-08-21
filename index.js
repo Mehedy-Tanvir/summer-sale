@@ -10,7 +10,7 @@ function cardClickHandler(data) {
   let count = cartList.childElementCount + 1;
 
   const p = document.createElement("p");
-  p.innerHTML = `<p class="text-[24px] text-[#111] font-medium">${count}. ${productName}</p>`;
+  p.innerHTML = `<p class="text-[24px] text-left text-[#111] font-medium">${count}. ${productName}</p>`;
   cartList.appendChild(p);
 
   let totalPrice = getInnerValue("total-price");
