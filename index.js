@@ -50,11 +50,7 @@ function couponBtnClickHandler() {
     return;
   }
 }
-// promo code click function
-function codeClickHandler() {
-  navigator.clipboard.writeText("SELL200");
-  alert("Promo code copied!!!");
-}
+
 // shared functions
 function getInnerValue(elementId) {
   const element = document.getElementById(elementId);
