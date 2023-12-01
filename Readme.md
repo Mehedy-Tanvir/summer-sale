@@ -1,5 +1,5 @@
 # summer-sale
 
-## [ Private Repo Link](https://classroom.github.com/a/uicCJkDQ)
+## [ Live Link]([https://classroom.github.com/a/uicCJkDQ](https://mehedy-tanvir.github.io/summer-sale/))
 
-Click here for the private repo: [https://classroom.github.com/a/uicCJkDQ](https://classroom.github.com/a/uicCJkDQ)
+
